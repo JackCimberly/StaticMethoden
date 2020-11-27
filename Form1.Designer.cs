@@ -33,7 +33,7 @@ namespace StaticMethoden
 			this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
+			this.BerechneButton = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -71,14 +71,15 @@ namespace StaticMethoden
 			this.label2.TabIndex = 3;
 			this.label2.Text = "=";
 			// 
-			// button1
+			// BerechneButton
 			// 
-			this.button1.Location = new System.Drawing.Point(76, 91);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(399, 23);
-			this.button1.TabIndex = 4;
-			this.button1.Text = "Berechne";
-			this.button1.UseVisualStyleBackColor = true;
+			this.BerechneButton.Location = new System.Drawing.Point(76, 91);
+			this.BerechneButton.Name = "BerechneButton";
+			this.BerechneButton.Size = new System.Drawing.Size(399, 23);
+			this.BerechneButton.TabIndex = 4;
+			this.BerechneButton.Text = "Berechne";
+			this.BerechneButton.UseVisualStyleBackColor = true;
+			this.BerechneButton.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label3
 			// 
@@ -94,12 +95,13 @@ namespace StaticMethoden
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(514, 172);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.BerechneButton);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.numericUpDown2);
 			this.Controls.Add(this.numericUpDown1);
 			this.Name = "Form1";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Simple-Berechnung mit Static-Methoden";
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -114,7 +116,7 @@ namespace StaticMethoden
 		private System.Windows.Forms.NumericUpDown numericUpDown2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button BerechneButton;
 		private System.Windows.Forms.Label label3;
 	}
 }

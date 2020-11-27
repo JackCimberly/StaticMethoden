@@ -16,5 +16,12 @@ namespace StaticMethoden
 		{
 			InitializeComponent();
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			//without create object
+			int result = Helper.BerechneAddition((int)numericUpDown1.Value, (int)numericUpDown2.Value);
+			label3.Text = result.ToString();
+		}
 	}
 }
